@@ -22,7 +22,16 @@ using u64 = std::uint64_t;
 using f32 = float;
 using f64 = double;
 
+using size = std::size_t;
+using ssize = std::ptrdiff_t;
+
 using byte = std::byte;
+
+namespace type_literals {
+
+constexpr byte operator""_b(const u64 value) noexcept { return static_cast<byte>(value); }
+
+} // namespace type_literals
 
 template<class T>
 struct static_class {
