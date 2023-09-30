@@ -1,8 +1,8 @@
 #pragma once
 
-#if !defined(GOLXZN_ALIASES)
-#define GOLXZN_ALIASES
-#endif // !defined(GOLXZN_ALIASES)
+#if !defined(GOLXZN_OS_ALIASES)
+#define GOLXZN_OS_ALIASES
+#endif // !defined(GOLXZN_OS_ALIASES)
 
 #include <cstddef>
 #include <cstdint>
