@@ -7,7 +7,7 @@
 #include <cstddef>
 #include <cstdint>
 
-namespace golxzn {
+namespace golxzn::os {
 
 using i8  = std::int8_t;
 using i16 = std::int16_t;
@@ -33,6 +33,6 @@ struct static_class {
 	static_class& operator=(static_class&&) = delete;
 };
 
-} // namespace golxzn
+} // namespace golxzn::os
 
 namespace gxzn = golxzn;
