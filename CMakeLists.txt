@@ -22,5 +22,5 @@ target_include_directories(golxzn_os_aliases INTERFACE
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/code/include>
 	$<INSTALL_INTERFACE:code/include>
 )
-target_compile_definitions(golxzn_os_aliases INTERFACE GOLXZN_ALIASES)
+target_compile_definitions(golxzn_os_aliases INTERFACE GOLXZN_OS_ALIASES ${GOLXZN_CONFIG_DEFINITIONS})
 

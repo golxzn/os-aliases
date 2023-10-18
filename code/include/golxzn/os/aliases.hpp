@@ -22,7 +22,7 @@ using u64 = std::uint64_t;
 using f32 = float;
 using f64 = double;
 
-using size = std::size_t;
+using usize = std::size_t;
 using ssize = std::ptrdiff_t;
 
 using byte = std::byte;
@@ -45,3 +45,7 @@ struct static_class {
 } // namespace golxzn::os
 
 namespace gxzn = golxzn;
+
+#if defined(GOLXZN_USE_GLOBAL_NAMES)
+namespace golxzn { using namespace os; } // namespace golxzn
+#endif // defined(GOLXZN_USE_GLOBAL_NAMES)
