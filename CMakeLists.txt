@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(golxzn.os.aliases
-	VERSION 1.0.4
+	VERSION 1.0.5
 	DESCRIPTION "Aliases for golxzn's projects."
 	LANGUAGES C CXX
 	HOMEPAGE_URL https://github.com/golxzn/aliases.git

@@ -29,7 +29,9 @@ using byte = std::byte;
 
 namespace type_literals {
 
-constexpr byte operator""_b(const u64 value) noexcept { return static_cast<byte>(value); }
+constexpr byte operator""_b(const unsigned long long value) noexcept {
+	return static_cast<byte>(value);
+}
 
 } // namespace type_literals
 
