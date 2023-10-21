@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(golxzn::os::aliases
-	VERSION 1.0.2
+	VERSION 1.0.3
 	DESCRIPTION "Aliases for golxzn's projects."
 	LANGUAGES C CXX
 	HOMEPAGE_URL https://github.com/golxzn/aliases.git
@@ -22,5 +22,9 @@ target_include_directories(golxzn_os_aliases INTERFACE
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/code/include>
 	$<INSTALL_INTERFACE:code/include>
 )
-target_compile_definitions(golxzn_os_aliases INTERFACE GOLXZN_OS_ALIASES ${GOLXZN_CONFIG_DEFINITIONS})
+target_compile_definitions(golxzn_os_aliases INTERFACE GOLXZN_OS_ALIASES)
+
+if(DEFINED GOLXZN_CONFIG_DEFINITIONS)
+	target_compile_definitions(golxzn_os_aliases INTERFACE ${GOLXZN_CONFIG_DEFINITIONS})
+endif()
 
